@@ -1,5 +1,5 @@
 server: 
-  port: 3377 
+  port: 3355 
 spring:
   #profiles: dev
   application: 
@@ -9,12 +9,12 @@ eureka:
     service-url: 
       defaultZone: http://eureka7001.com:7001/eureka/  
   instance:
-    instance-id: cloud-config-client3377  
+    instance-id: cloud-config-client3355  
     prefer-ip-address: true     
 info:
   app.name: SpringCloud2020
   company.name: www.baidu.com
-  readme: cloud-config-client-3377
+  readme: cloud-config-client-3355
 
 config: 
     info: "config-dev.yml,version=1"
