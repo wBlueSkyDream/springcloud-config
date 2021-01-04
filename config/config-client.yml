@@ -1,0 +1,42 @@
+
+spring:
+  profiles:
+    active:
+    - dev
+---
+server: 
+  port: 3355 
+spring:
+  profiles: dev
+  application: 
+    name: cloud-config-client
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-dev.com:7001/eureka/  
+  instance:
+    instance-id: cloud-config-client3355 #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
+info:
+  app.name: SpringCloud2020
+  company.name: www.baidu.com
+  readme: cloud-config-client-3355
+---
+server: 
+  port: 3366 
+spring:
+  profiles: test
+  application: 
+    name: cloud-config-client
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://eureka-test.com:7001/eureka/
+  instance:
+    instance-id: cloud-config-client3366 #自定义服务名称信息
+    prefer-ip-address: true     #访问路径可以显示IP地址
+info:
+  app.name: SpringCloud2020
+  company.name: www.baidu.com
+  readme: cloud-config-client-3366
+ 
