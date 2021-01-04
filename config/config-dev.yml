@@ -17,4 +17,4 @@ info:
   readme: cloud-config-client-3355
 
 config: 
-    info: "config-dev.yml,version=1"
+    info: "config-dev.yml,version=2"
